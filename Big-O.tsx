@@ -45,3 +45,12 @@ function summation1(n){
 console.log(summation1(3), "non-loop");
 
 // the time complexity of the above program is O(1) - constant time complexity
+//irrespective of the value of n, line 2 is executed only once
+
+
+
+//If there are 2 nested loops, the time complexity of the is quadratic i.e O(n2)
+
+//If there are 3 nested loops, it is cubic i.e O(n3)
+
+// If the input size reduces by half on every iteration, it is logarithmic i.e O(logn)
