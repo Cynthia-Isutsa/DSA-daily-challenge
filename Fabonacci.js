@@ -1,12 +1,26 @@
-let prev2 = 0;
-let prev1 = 1;
+// FIBONACCI SEQUENCE
+//Problem Statement: Given a number 'n', find the nth element of the Fibonacci sequence.
+// In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones.
+// The first two numbers in the sequence are 0 and 1.
+// Example:
+// fibonacci(2) = [0,1]
+// fibonacci(3) = [0,1,1]
+// fibonacci(7) = [0,1,1,2,3,5,8]
 
-console.log(prev2); // Print the first Fibonacci number
-console.log(prev1); // Print the second Fibonacci number
-
-for (let i = 0; i < 18; i++) {
-    let newFibo = prev1 + prev2; // Calculate the new Fibonacci number
-    console.log(newFibo);        // Print the new Fibonacci number
-    prev2 = prev1;               // Update prev2 to the previous number (prev1)
-    prev1 = newFibo;             // Update prev1 to the new Fibonacci number
+function fibonacci(n) {
+    const fib = [0, 1]
+    for (let i = 2; i < n; i++){
+        fib[i] = fib[i - 1] + fib[i - 2]
+    }
+    return fib
 }
+
+console.log(fibonacci(2))
+console.log(fibonacci(3))
+console.log(fibonacci(4))
+console.log(fibonacci(5))
+console.log(fibonacci(6))
+console.log(fibonacci(7))
+console.log(fibonacci(10000000))
+
+//  Big-O = O(n)
