@@ -23,4 +23,4 @@ console.log(fibonacci(6))
 console.log(fibonacci(7))
 console.log(fibonacci(10000000))
 
-//  Big-O = O(n)
+//  Big-O = O(n) - linear time complexity
