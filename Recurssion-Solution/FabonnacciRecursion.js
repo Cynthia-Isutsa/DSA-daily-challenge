@@ -24,4 +24,5 @@ console.log(recursiveFib(11))
 
 // Big-O = O(2^n) -  
 
-// This means tha th recursive solution is not efficient as the Big-O notation is exponential
+// This means tha the recursive solution is not efficient as the Big-O notation is exponential
+// On the other hand the iterative solution is more efficient as the Big-O notation is linear
